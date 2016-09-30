@@ -65,7 +65,7 @@ static int init(void) {
 static uint64_t sf_get_ticks(void) {
     struct timespec t;
 
-    clock_gettime(CLOCK_REALTIME, &t);
+    /*clock_gettime(CLOCK_REALTIME, &t);*/
 
     return t.tv_sec * 1e9 + t.tv_nsec;
 }

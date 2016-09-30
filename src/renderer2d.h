@@ -4,6 +4,8 @@
 
 #ifdef GLES2
 # include <GLES2/gl2.h>
+#elif __APPLE__
+# include <OpenGL/gl.h>
 #else
 # include <GL/gl.h>
 #endif

@@ -20,7 +20,7 @@ struct im_mouse_position {
 
 enum key {
     KEY_MB_LEFT,
-#if defined(__WIN32__) || defined(__linux__)
+#if defined(__WIN32__) || defined(__linux__) || defined(__APPLE__)
     KEY_MB_MIDDLE,
     KEY_MB_RIGHT,
     KEY_0,
